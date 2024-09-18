@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	
+	<div class="preloader">
+		<style>
+			.preloader {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+				z-index: 999;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+	
+			.preloader img {
+				width: 300px;
+			}
+		</style>
+		<img src="img/preloader.svg" alt="">
+	</div>
+	<div class="wrapper">
+		<main class="page">
+			<section class="section__start section first" data-sectionid="1">
+				<div class="section__start__container">
+					<div class="section__start__content">
+						<div class="section__start__info">Stop spending time on mediocre online stuff!</div>
+						<h1 class="section__start__title">Explore our intriguing 3D game</h1>
+						<p class="section__start__text">
+							instead and experience unparalleled pleasure like you've never seen before.
+						</p>
+						<div class="section__start__buttons">
+							<button class="section__start__button btn btn-secondary">No,thanks</button>
+							<button class="section__start__button btn btn-primary" onclick="nextSection(this);">Continue</button>
+						</div>
+					</div>
+				</div>
+				<div class="section__start__images">
+					<img src="img/screen1_women1.webp" alt="" class="section__start__women1" >
+					<img src="img/screen1_women2.webp" alt="" class="section__start__women2" >
+					<img src="img/screen1_women2_mob.webp" alt="" class="section__start__women2_mob" >
+				</div>
+			</section>
+			<section class="section__choose section" data-sectionid="2">
+				<div class="section__choose__container">
+					<div class="section__choose__content">
+						<h1 class="section__choose__title">Who Would You Choose as Your First Partner, if you play right now?</h1>
+						<div class="section__choose__slider__wrapper">
+							<div class="section__choose__slider swiper">
+								<div class="section__choose__wrapper swiper-wrapper">
+									<div class="section__choose__slide swiper-slide">
+										<img src="img/choose1.webp" alt="" >
+										<h3 class="section__choose__slide__name">Step-Sister</h3>
+									</div>
+									<div class="section__choose__slide swiper-slide">
+										<img src="img/choose1.webp" alt="" >
+										<h3 class="section__choose__slide__name">Step-Sister</h3>
+									</div>
+									<div class="section__choose__slide swiper-slide">
+										<img src="img/choose1.webp" alt="" >
+										<h3 class="section__choose__slide__name">Step-Sister</h3>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-prev">
+								<img src="img/slider_arrow.svg" alt="" ><img src="img/slider_arrow_mob.svg" alt="" >
+							</button>
+							<button type="button" class="swiper-button-next">
+								<img src="img/slider_arrow.svg" alt="" ><img src="img/slider_arrow_mob.svg" alt="" >
+							</button>
+						</div>
+						<button class="section__choose__button btn btn-primary" onclick="nextSection(this);">Next</button>
+					</div>
+				</div>
+			</section>
+			<section class="section__warning section " data-sectionid="3">
+				<div class="section__warning__container">
+					<div class="section__warning__content">
+						<h1 class="section__warning__title">Warning</h1>
+						<p class="section__warning__text">You must be at least 18 years old and comfortable with mature topics to play the game.</p>
+						<button class="section__warning__button btn btn-primary" onclick="nextSection(this);">Ok, Continue</button>
+					</div>
+				</div>
+				<div class="section__warning__images">
+					<img src="img/screen2_women1.webp" alt="" class="section__warning__women1" >
+					<img src="img/screen2_women2.webp" alt="" class="section__warning__women2" >
+				</div>
+			</section>
+			<section class="section_job section " data-sectionid="4">
+				<div class="section_job__container">
+					<div class="section_job__content">
+						<h1 class="section_job__title">Візьміть на роботу)))</h1>
+						<a href="https://t.me/defest97" target="_blank" class="section_job__link">@defest97</a>
+					</div>
+				</div>
+			</section>
+			<audio id="background-audio" src="audio/bg_music.mp3" loop></audio>
+
+			<button class="sound" onclick="toggleSound(this)">
+				<img src="img/sound_on.svg" alt="" >
+			</button>
+
+		</main>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
